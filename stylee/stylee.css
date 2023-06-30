@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: #b9fbc0;
+  width: 100%;
+  color: rgb(25, 3, 3);
+  padding: 12px;
+  margin-top: 50px;
+}
+
+.input-form {
+
+  justify-content: center;
+}
+
+.input-form input {
+  margin-right: 2rem;
+  padding: 14px 24px;
+  border: 1px solid #cccccc;
+  color: #555;
+  font-size: 0.95rem;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: auto;
+  }
+
+  .input-form {
+    flex-direction: column;
+  }
+
+  .input-form input {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.bookmark-btn {
+  padding: 14px 24px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 30px;
+  background: #0087ff;
+  border: #0087ff;
+}
+
+.output-container {
+  margin-top: 2rem;
+}
+
+.output-list {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.output-list li {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.output-list a {
+  text-decoration: none;
+  color: hsl(206, 62%, 5%);
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+.output-list a:hover {
+  text-decoration: underline;
+}
+
+.cross {
+  font-size: 0.9rem;
+  color: hsl(5, 90%, 8%);
+  border: 2px solid;
+  padding: 3px 6px;
+  border-radius: 40%;
+  cursor: pointer;
+  
+  margin-top:2px;
+
+
+
+}
+
+.edit {
+  text-decoration: underline;
+  color: #0e1622;
+  margin-left: auto;
+  margin-right: 1.5rem;
+  line-height: 1.25;
+  cursor: pointer;
+  font-size: 25px;
+
+}
+
+.edit:hover {
+  color: black;
+  text-shadow: 0 1px 2px blue;
+}
+
+.edit:active {
+  color: #0087ff;
+
+  text-shadow: 0 1px 2px gray;
+}
